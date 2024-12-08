@@ -8,6 +8,7 @@ function MyForm(props) {
     e.preventDefault()
     props.aaa(myFormData)
    setMyFormData({ type: "", price: 0 })
+  
     
     
   };
@@ -25,6 +26,7 @@ function MyForm(props) {
         <input type="text" placeholder="type" onChange={typeClickHandler} value={myFormData.type} />
         <input type="numbet" placeholder="amount" onChange={costClickHandler} value={myFormData.price} />
         <button>add</button>
+       
       </form>
     </div>
   );
